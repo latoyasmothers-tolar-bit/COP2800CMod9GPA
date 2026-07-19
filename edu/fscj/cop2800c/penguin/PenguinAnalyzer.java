@@ -14,7 +14,6 @@ public class PenguinAnalyzer {
 
     // Read all columns from the CSV File
     public void readPenguinData() {
-
         penguinList = new ArrayList<>();
 
         try (BufferedReader reader =
@@ -27,11 +26,11 @@ public class PenguinAnalyzer {
                 String[] tokens = line.split(",");
 
                 //Ensure correct column count
-                if (tokens.length >= 7) {
+                if (tokens.length >= 7) { //check for 7 columns
 
                     try {
 
-                        int sampleNumber = Integer.parseInt(tokens[0].trim());
+                        int sampleNumber = Integer.parseInt(tokens[0].trim());//Read sample number
                         String species = tokens[1].trim();
                         double billLength = Double.parseDouble(tokens[2].trim());
                         double billDepth = Double.parseDouble(tokens[3].trim());
