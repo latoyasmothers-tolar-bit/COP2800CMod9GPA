@@ -10,6 +10,7 @@ public class PenguinData {
     private int sampleNumber;
     private String species;
     private double billLength;
+    private double billDepth;
     private double flipperLength;
     private double bodyMass;
     private String sex;
@@ -22,7 +23,7 @@ public class PenguinData {
         this.species = species;
         this.billLength = billLength;
         this.billDepth = billDepth;
-        this.flipperLength = fiipperLenght;
+        this.flipperLength = flipperLength;
         this.bodyMass = bodyMass;
         this.sex = sex;
     }
@@ -34,5 +35,5 @@ public class PenguinData {
     public double getBillDepth(){return billDepth;}
     public double getFlipperLength(){return flipperLength;}
     public double getBodyMass(){return bodyMass;}
-    public String getSex(){retur sex;}
+    public String getSex(){return sex;}
 }
